@@ -1,3 +1,3 @@
 # Glassfish7 with docker
 
-Paste glassfish7 here and run init.sh
+Paste glassfish7.zip here and run init.sh
