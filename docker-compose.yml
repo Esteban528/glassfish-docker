@@ -1,0 +1,11 @@
+services:
+  glassfish:
+    image: eclipse-temurin:17
+    volumes:
+      - ./glassfish7:/opt/glassfish7
+      - ./commands.sh:/usr/local/bin/commands.sh
+      - ./passwordfile:/usr/local/bin/passwordfile
+    ports:
+      - 8080:8080
+      - 4848:4848
+    command: ["/bin/bash", "/usr/local/bin/commands.sh"]
