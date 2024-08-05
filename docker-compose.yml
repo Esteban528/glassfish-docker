@@ -5,7 +5,9 @@ services:
       - ./glassfish7:/opt/glassfish7
       - ./commands.sh:/usr/local/bin/commands.sh
       - ./passwordfile:/usr/local/bin/passwordfile
+      - ./my-jakarta-app/target/:/var/my-jakarta-app/target
     ports:
       - 8080:8080
       - 4848:4848
     command: ["/bin/bash", "/usr/local/bin/commands.sh"]
+    container_name: glassfish-with-docker 
