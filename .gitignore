@@ -1,2 +1,4 @@
 *.zip
 glassfish7/
+target/
+my-jakarta-app/target/
