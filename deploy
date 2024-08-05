@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+mvn clean package
+docker exec -it glassfish-with-docker /opt/glassfish7/bin/asadmin deploy --force /var/my-jakarta-app/target/mavenproject1-1.0-SNAPSHOT.war
+echo "ServerDeployed in http://localhost:8080/mavenproject1-1.0-SNAPSHOT"
